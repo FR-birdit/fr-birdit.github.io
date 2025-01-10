@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-image: url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.frame {
+    width: 470px;
+    height: 520px;
+    background-color: rgb(22, 22, 22);
+    border: 2px solid rgb(37, 37, 39);
+    border-radius: 15px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10%;
+    transition: all 0.5s;
+    transform:
+        perspective(70em)
+        rotateX(4deg)
+        rotateY(-24deg)
+        rotateZ(4deg);
+    opacity: 95%;
+    backdrop-filter: blur(50px);
+    animation-duration: 1s;
+    animation-name: slide-in;
+    scale: 90%;
+}
+
+@keyframes slide-in {
+    from {
+      scale: 0%;
+    }
+  
+    to {
+      scale: 90%;
+    }
+}
+
+.frame:hover {
+    scale: 100%;
+    transform:
+        perspective(1000px)
+        rotateX(0deg)
+        rotateY(0deg)
+        rotateZ(0deg);
+    box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.08);
+    opacity: 100%;
+}
+
+.pfp {
+    width: 110px;
+    height: 110px;
+    border-radius: 0%;
+    margin: auto;
+    display: block;
+    top: 4%;
+    position: relative;
+}
+
+.name {
+    text-align: center;
+    top: 1%;
+    position: relative;
+    font-family: "Jersey 15";
+    font-size: 30;
+    color: white;
+}
+
+.about {
+    text-align: center;
+    top: -25px;
+    position: relative;
+    font-family: "Jersey 15";
+    font-size: 25;
+    color: rgb(134, 134, 134);
+}
+
+.discord-frame {
+    width: 400px;
+    height: 105px;
+    background-color: rgb(22, 22, 22);
+    border: 2px solid rgb(37, 37, 39);
+    border-radius: 15px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0%;
+    transition: all 0.5s;
+}
+
+.discord-pfp {
+    width: 85px;
+    height: 85px;
+    border-radius: 15px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border: 1px solid rgb(79, 79, 92);
+}
+
+.discord-name {
+    text-align: left;
+    top: -11px;
+    left: 105px;
+    position: absolute;
+    font-family: "Jersey 15";
+    font-size: 25;
+    color: rgb(187, 187, 187);
+}
+
+.badge-hypesquad {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 205px;
+    transition: all 0.5s;
+}
+
+.badge-developer {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 230px;
+    transition: all 0.5s;
+}
+
+.badge-nitro {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 255px;
+    transition: all 0.5s;
+}
+
+.badge-boost {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    transition: all 0.5s;
+}
+
+.badge-original {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 305px;
+    transition: all 0.5s;
+}
+
+.badge-hypesquad:hover {
+    scale: 112%;
+    cursor: pointer;
+}
+
+.badge-developer:hover {
+    scale: 112%;
+    cursor: pointer;
+}
+
+.badge-nitro:hover {
+    scale: 112%;
+    cursor: pointer;
+}
+
+.badge-boost:hover {
+    scale: 112%;
+    cursor: pointer;
+}
+
+.badge-original:hover {
+    scale: 112%;
+    cursor: pointer;
+}
+
+.discord-about {
+    text-align: left;
+    top: 23px;
+    left: 105px;
+    position: absolute;
+    font-family: "Jersey 15";
+    font-size: 23;
+    color: rgb(144, 144, 144);
+}
+
+.music_button {
+    z-index: 3;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 30px 50px;
+    background-color: rgb(0 0 0 / 30%);
+    border: none;
+    color: white;
+    transition: all 0.5s;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+.logo-github {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -25px;
+    left: 175px;
+    transition: all 0.5s;
+}
+
+.logo-youtube {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -25px;
+    left: 185px;
+    transition: all 0.5s;
+}
+
+.logo-twitch {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -25px;
+    left: 195px;
+    transition: all 0.5s;
+}
+
+.logo-github:hover {
+    scale: 107%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+}
+
+.logo-youtube:hover {
+    scale: 107%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+}
+
+.logo-twitch:hover {
+    scale: 107%;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+}
+
+.profile {
+    top: 0%;
+    left: 0%;
+    border-radius: 10px;
+    padding: 7px 25px;
+    background-color: #141414;
+    border: 2px solid #222222;
+    color: white;
+    transition: all 0.5s;
+    position: relative;
+    top: 60px;
+    left: 295px;
+}
+
+.profile:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    transform: translate(0px, -5px);
+    cursor: pointer;
+}
+
+.footer-text {
+    text-align: center;
+    top: 80px;
+    left: 0px;
+    position: relative;
+    font-family: "Jersey 15";
+    font-size: 15;
+    color: rgb(187, 187, 187);
+}
+
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;pointer-events:none;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
